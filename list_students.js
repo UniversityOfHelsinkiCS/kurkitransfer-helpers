@@ -16,6 +16,11 @@ registeredLines.shift()
 const registeredStudents = registeredLines.map(line => {
   const parts = line.split(';')
 
+  if (parts[1].length<8) {
+    console.log('WARNING: ', parts)
+    process.exit(1)
+  }
+
   return {
     name: parts[0],
     number: `0${parts[1]}`,
