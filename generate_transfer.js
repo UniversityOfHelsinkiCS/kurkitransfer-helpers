@@ -20,6 +20,6 @@ students.forEach(number => {
 
 const fileDate = date.replace('.2018', '.18')
 
-const fileName = `AYTKT21018%${fileDate}-K1-V2018.dat`
+const fileName = `AYTKT21018%${fileDate}-K2-V2018.dat`
 
 fs.writeFileSync(fileName, rows.join('\n'), 'utf8')
